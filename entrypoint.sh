@@ -2,4 +2,4 @@
 
 set -eu
 
-sh -c "$*"
+bash -c "$*"
