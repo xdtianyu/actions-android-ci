@@ -1,8 +1,11 @@
 name: 'actions-android-ci'
 description: 'Run Android build with GitHub Actions'
 author: 'xdtianyu'
-icon: 'package'
-color: 'green'
+
+branding:
+  color: green
+  icon: package
+
 inputs: 
   build:
     description: 'Build android app with gradle'
@@ -12,6 +15,7 @@ inputs:
         source /opt/setup-android-sdk.sh;
         ./gradlew assembleDebug
         "'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
