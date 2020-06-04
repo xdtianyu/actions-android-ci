@@ -9,12 +9,7 @@ branding:
 inputs: 
   build:
     description: 'Build android app with gradle'
-    default: '"
-        source .travis/env.sh;
-        touch local.properties;
-        source /opt/setup-android-sdk.sh;
-        ./gradlew assembleDebug
-        "'
+    default: '"echo Hello Android Actions"'
 
 runs:
   using: 'docker'
