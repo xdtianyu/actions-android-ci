@@ -24,7 +24,7 @@ jobs:
       uses: xdtianyu/actions-android-ci@master
       with:
         args: '"
-        source .travis/env.sh;
+        . .travis/env.sh;
         touch local.properties
         "'
 
@@ -32,8 +32,8 @@ jobs:
       uses: xdtianyu/actions-android-ci@master
       with: 
         args: '"
-        source .travis/env.sh;
-        source /opt/setup-android-sdk.sh;
+        . .travis/env.sh;
+        . /opt/setup-android-sdk.sh;
         ./gradlew assembleDebug
         "'
 ```
