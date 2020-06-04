@@ -9,7 +9,7 @@ branding:
 inputs: 
   build:
     description: 'Build android app with gradle'
-    default: '"echo Hello Android Actions"'
+    default: 'bash -c "echo Hello Android Actions"'
 
 runs:
   using: 'docker'
