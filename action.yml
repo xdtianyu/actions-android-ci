@@ -6,13 +6,6 @@ branding:
   color: green
   icon: package
 
-inputs: 
-  build:
-    description: 'Build android app with gradle'
-    default: 'bash -c "echo Hello Android Actions"'
-
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.build }}
