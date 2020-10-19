@@ -8,8 +8,4 @@ branding:
 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  volumes: 
-    - {{ $github.workplace }}/.opt/cache:/opt/cache
-    - {{ $github.workplace }}/.opt/sdk:/opt/sdk
-    - {{ $github.workplace }}/.opt/ndk:/opt/ndk
+  image: 'docker://xdtianyu/docker:github-actions-android'
