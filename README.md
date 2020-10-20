@@ -17,12 +17,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+
     - name: Checkout submodule
       run: git submodule sync --recursive && git submodule update --init --recursive
 
     - name: Before build
-      uses: lib64-net/actions-android-ci@master
+      uses: xdtianyu/actions-android-ci@master
       env:
         ENCRYPTED_KEY: ${{ secrets.ENCRYPTED_KEY }}
         ENCRYPTED_IV: ${{ secrets.ENCRYPTED_IV }}
@@ -50,7 +52,7 @@ jobs:
           ${{ runner.os }}-
 
     - name: Build
-      uses: lib64-net/actions-android-ci@master
+      uses: xdtianyu/actions-android-ci@master
       env:
         ENCRYPTED_KEY: ${{ secrets.ENCRYPTED_KEY }}
         ENCRYPTED_IV: ${{ secrets.ENCRYPTED_IV }}

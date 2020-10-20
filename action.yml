@@ -8,4 +8,4 @@ branding:
 
 runs:
   using: 'docker'
-  image: 'docker://xdtianyu/docker:github-actions-android'
+  image: 'docker://xdtianyu/actions-android-ci'
