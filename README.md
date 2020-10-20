@@ -2,6 +2,8 @@
 
 Run Android build with GitHub Actions, checkout [xdtianyu/CallerInfo](https://github.com/xdtianyu/CallerInfo/blob/master/.github/workflows/android.yml) for more usage.
 
+![](https://raw.githubusercontent.com/xdtianyu/actions-android-ci/master/art/screenshot.png)
+
 ### Usage example 
 
 This example configure can build android app in ~2min with gradle and sdk cache.
